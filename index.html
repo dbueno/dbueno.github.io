@@ -4,55 +4,136 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Hakyll Blog - Home</title>
+        <title>Denis Bueno - Home</title>
         <link rel="stylesheet" href="./css/default.css" />
     </head>
     <body>
         <header>
             <div class="logo">
-                <a href="./">My Hakyll Blog</a>
+                <a href="./">Denis Bueno</a>
             </div>
             <nav>
                 <a href="./">Home</a>
-                <a href="./about.html">About</a>
+                <!-- <a href="/about.html">About</a> -->
                 <a href="./contact.html">Contact</a>
                 <a href="./archive.html">Archive</a>
+                <a href="./software.html">Software</a>
             </nav>
         </header>
 
         <main role="main">
             <h1>Home</h1>
-            <h2>Welcome</h2>
+            <h2>Denis Bueno</h2>
 
-<img src="./images/haskell-logo.png" style="float: right; margin: 10px;" />
+<!-- <img src="/images/haskell-logo.png" style="float: right; margin: 10px;" /> -->
+<figure class="item">
+    <img src="./images/me.png" />
+    <!-- style="float: right; margin: 10px;" /> -->
+    <figcaption class="caption">
+        <tt>dlbueno@umich.edu</tt><br />
+        <a href="https://twitter.com/codebueno">@codebueno</a>
+    </figcaption>
+</figure>
 
-<p>Welcome to my blog!</p>
+<p>I am a PhD candidate at the <a href="https://www.cse.umich.edu">University
+    of Michigan</a> studying with Karem Sakallah (also previously with <a href="http://mdbailey.ece.illinois.edu">Michael Bailey</a>, now at UIUC).
+Before coming to Ann Arbor, I received my Bachelor's degree from Georgia Tech
+and my Master's from Cornell.</p>
 
+<p>I'm interested in formal software verification, static program analysis, and
+security.</p>
+
+<h2>Publications</h2>
+<div id="publication_title">
+    <a href="./pubs/fmcad20-bueno.pdf">EUFicient Reachability in Software with Arrays</a>
+</div>
+with Arlen Cox and Karem A. Sakallah. In Formal Methods for Computer-Aided Design (FMCAD), 2020, to appear.
+
+<div id="publication_title">
+    <a href="./pubs/vmcai19-bueno.pdf">EUForia: complete software model checking with uninterpreted functions.</a>
+</div>
+with Karem A. Sakallah. In Verification, Model Checking, and Abstract Interpretation (VMCAI), 2019.
+<div id="publication_bibtex">
+@inproceedings{Bueno-Sakallah:VMCAI19,
+  author    = {Denis Bueno and Karem A. Sakallah},
+  title     = {euforia: Complete Software Model Checking with Uninterpreted Functions},
+  pages     = {363--385},
+  year      = {2019},
+  crossref  = {VMCAI:19}
+}
+@proceedings{VMCAI:19,
+  editor    = {Constantin Enea and Ruzica Piskac},
+  title     = {Verification, Model Checking, and Abstract Interpretation},
+  booktitle = {Verification, Model Checking, and Abstract Interpretation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11388},
+  publisher = {Springer},
+  year      = {2019}
+}
+</div>
+This is a post-peer-review, pre-copyedit version of an article published in Verification, Model Checking, and Abstract Interpretation.
+The final authenticated version is available online at: <a href="https://dx.doi.org/10.1007/978-3-030-11245-5">http://dx.doi.org/https://dx.doi.org/10.1007/978-3-030-11245-5</a>.
+
+<div id="publication_title">
+Improving performance of CDCL SAT solvers by automated design of variable selection heuristics.
+</div>
+Marketa Illetskova, Alex R. Bertels, Joshua M. Tuggle, Adam Harter, Samuel Richter, Daniel R. Tauritz, Samuel A. Mulder, Denis Bueno, Michelle Leger, and William M. Siever. In SSCI, 2017.
+<div id="publication_bibtex">
+@inproceedings{Illetskova+:SSCI17,
+  author    = {Marketa Illetskova and Alex R. Bertels and Joshua M. Tuggle and Adam Harter and Samuel Richter and Daniel R. Tauritz and Samuel A. Mulder and Denis Bueno and Michelle Leger and William M. Siever},
+  title     = {Improving performance of {CDCL} {SAT} solvers by automated design of variable selection heuristics},
+  pages     = {1--8},
+  year      = {2017},
+  crossref  = {SSCI:17}
+}
+@proceedings{SSCI:17,
+  title     = {Symposium Series on Computational Intelligence},
+  booktitle = {Symposium Series on Computational Intelligence},
+  publisher = {{IEEE}},
+  year      = {2017}
+}
+</div>
+
+<div id="publication_title">
+  <a href="./pubs/raid13-bueno.pdf">Detecting traditional packers, decisively</a>
+</div>
+with Kevin J. Compton, Karem A. Sakallah, and Michael Bailey.
+In Research in Attacks, Intrusions, and Defenses (RAID), 2013.
+
+<div id="publication_bibtex">
+@inproceedings{Bueno+:RAID2013,
+  author = {Denis Bueno and Kevin J. Compton and Karem A. Sakallah and Michael Bailey},
+  title = {Detecting Traditional Packers, Decisively},
+  year = {2013},
+  pages = {184--203},
+  crossref = {RAID:13}}
+@proceedings{RAID:13,
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  booktitle = {Research in Attacks, Intrusions, and Defenses},
+  title = {Research in Attacks, Intrusions, and Defenses},
+  volume = {8145},
+  editor = {Salvatore J. Stolfo and Angelos Stavrou and Charles V. Wright},
+  year = {2013}}
+</div>
+
+<hr>
+
+<!--
 <p>I've reproduced a list of recent posts here for your reading pleasure:</p>
 
 <h2>Posts</h2>
 <ul>
     
         <li>
-            <a href="./posts/2015-12-07-tu-quoque.html">Tu Quoque</a> - December  7, 2015
-        </li>
-    
-        <li>
-            <a href="./posts/2015-11-28-carpe-diem.html">Carpe Diem</a> - November 28, 2015
-        </li>
-    
-        <li>
-            <a href="./posts/2015-10-07-rosa-rosa-rosam.html">Rosa Rosa Rosam</a> - October  7, 2015
-        </li>
-    
-        <li>
-            <a href="./posts/2015-08-12-spqr.html">S.P.Q.R.</a> - August 12, 2015
+            <a href="/posts/2020-08-13-alive.html">It's Alive</a> - August 13, 2020
         </li>
     
 </ul>
 
 
-<p>…or you can find more in the <a href="./archive.html">archives</a>.</p>
+<p>...or you can find more in the <a href="/archive.html">archives</a>.</p>
+-->
 
         </main>
 
