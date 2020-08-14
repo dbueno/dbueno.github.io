@@ -7,6 +7,10 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+    match "CNAME" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match ("images/*" .||. "pubs/*") $ do
         route   idRoute
         compile copyFileCompiler
