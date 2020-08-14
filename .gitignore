@@ -1,3 +1,6 @@
 /.stack-work
 *swp
 /_cache
+/dist-newstyle
+/dbueno-github-io.cabal
+/stack.yaml.lock
