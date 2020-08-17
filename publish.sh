@@ -1,4 +1,4 @@
-#!/bin/ssh
+#!/bin/sh
 
 cd _site
 git add --all
