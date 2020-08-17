@@ -53,7 +53,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    defaultContext
+                    modCtx
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
@@ -67,4 +67,9 @@ main = hakyll $ do
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
+    defaultContext
+
+modCtx :: Context String
+modCtx =
+    modificationTimeField "modified" "%Y-%m-%d" `mappend`
     defaultContext

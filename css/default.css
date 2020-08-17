@@ -50,6 +50,12 @@ h2 {
     white-space: pre-wrap;
 }
 
+#last_modified {
+    font-size: 1.2rem;
+    text-align: right;
+    color: #555;
+}
+
 ul#software li {
     display: inline;
 }
